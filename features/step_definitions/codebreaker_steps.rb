@@ -2,7 +2,7 @@ class Output
   def messages
     @messages ||= []
   end
-  
+
   def puts(message)
     messages << message
   end
@@ -36,3 +36,4 @@ end
 Then /^the mark should be "([^"]*)"$/ do |mark|
   output.messages.should include(mark)
 end
+
